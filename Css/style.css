@@ -1,30 +1,47 @@
-*,
-html,
-body {
-  margin: 0;
+
+*{
+  margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
-  background-color:silver;
 }
 
-svg {
-  /*position: absolute;*/
-  font: 20em Roboto;
+main {
+height: 100vh;
+width: 100%;
+}
+
+#SVG-marca{
+  margin-left: 30px;
+  animation: updown 3s;
+  animation-fill-mode: both;
+  font: 9em Roboto;
   letter-spacing: 0.15em;
   width: 100%;
-  height: 100%;
-  margin-top: 5%;
+  height: 20%;
+  padding: 2px;
+}
+
+@keyframes updown{
+  from{
+    width: 0px;
+    height: 0px;
+  }to{
+    width: 150px;
+    height: 300px;
+  }
 }
 
 
-svg text {
-  fill: #111;
-  stroke: rgb(25, 37, 15);
+#SVG-marca text{
+  fill: #212529;
+  stroke: rgb(241, 237, 237);
   fill-opacity: 1;
   stroke-width: 0;
   stroke-dasharray: 100% 0;
-  animation: stroke-offset 3s ease-out;
+  animation: stroke-offset 3s linear;
+  animation-direction: alternate;
+
 }
+
 
 @keyframes stroke-offset {
   0% {
@@ -39,7 +56,7 @@ svg text {
     fill-opacity: 0;
   }
   75% {
-    stroke-width: 3px;
+    stroke-width: 2px;
   }
   100% {
     stroke-width: 0;

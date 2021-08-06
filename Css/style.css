@@ -25,28 +25,21 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  
+  width: 90%; 
 }
-
 .wrapper h1{
   text-align: center;
   color: white;
-  font-size: 7vw;
-  margin: 4px;
+  font-size: 10vw;
   z-index: 100;
+  margin: 0;
 }
-.sub-wrapper{
-  border: 3px solid white;
-  width: 30%;
-  z-index: 100;
-}
-.sub-wrapper p{
+.wrapper p{
 color: crimson;
-font-size: 3vw;
+font-size: 5vw;
 text-align: center;
 margin: 0;
-padding: 4px;
+z-index: 100;
 }
 
 

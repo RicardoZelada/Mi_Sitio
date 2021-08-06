@@ -5,33 +5,50 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    /*scroll-behavior: smooth;*/
+    scroll-behavior: smooth;
+    font-family: 'Space Mono', monospace;
 }
-html h2{
-  font-family: 'Space Mono', monospace;
-}
-
 
 main{
+  background-color: black;
+  overflow: hidden;
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
-
 .wrapper{
-  position: relative;
+  position: absolute;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 90%;
+  
 }
 
-.wrapper h5{
-  font-family: 'Space Mono', monospace;
+.wrapper h1{
+  text-align: center;
+  color: white;
+  font-size: 7vw;
+  margin: 4px;
+  z-index: 100;
 }
+.sub-wrapper{
+  border: 3px solid white;
+  width: 30%;
+  z-index: 100;
+}
+.sub-wrapper p{
+color: crimson;
+font-size: 3vw;
+text-align: center;
+margin: 0;
+padding: 4px;
+}
+
 
 
 .Sbody{
@@ -45,7 +62,7 @@ main{
     background-color: #272222;
     margin-top: -51px;
 }
-
+/*
 .container{
     position: absolute;
     width: 100%;
@@ -53,7 +70,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 .sectionContact{
   position: relative;

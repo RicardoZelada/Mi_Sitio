@@ -1,5 +1,5 @@
 
-const container = document.querySelector('.container')
+const container = document.querySelector('.wrapper')
 for(var i = 0; i <= 100; i++){
     const blocks = document.createElement('div');
     blocks.classList.add('blocks');
